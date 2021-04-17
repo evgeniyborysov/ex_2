@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap");
+@font-face {
+  font-family: "Gotham - Book";
+  src: url("../fonts/GothamBook.woff"); }
+@font-face {
+  font-family: "Gotham";
+  font-style: bold;
+  src: url("../fonts/gothambold1.woff"); }
+@font-face {
+  font-family: "Gotham";
+  font-style: medium;
+  src: url("../fonts/gotham-medium-webfont.woff"); }
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+header {
+  background-image: url("/img/hero_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 53px;
+  margin-bottom: 253px; }
+  .header__wrap .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .header__wrap .header__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.header__title {
+  padding-bottom: 225px; }
+  .header__title h1 {
+    color: #ffffff;
+    font-family: Gotham;
+    font-size: 80px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .header__title h2 {
+    color: #ffffff;
+    font-family: "Gotham - Book";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5.4px; }
+
+.scroll {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px; }
+
+.svg:hover {
+  opacity: 0.5; }
+
+.what__content-tc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.content__descr span {
+  display: block;
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #2c4058;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 400; }
+
+.what__content-co {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.news__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.slider__card {
+  width: 370px;
+  height: 514px; }
+
+.card__inner {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .card__inner h4 {
+    margin: 0; }
+
+.gallery__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.galery__small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px; }
+
+.map {
+  background-image: url("../img/map.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px; }
+
+footer {
+  background-image: url("/img/footer_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=style.css.map */
