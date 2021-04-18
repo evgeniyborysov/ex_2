@@ -186,6 +186,25 @@ header {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.news__title {
+  padding-top: 100px; }
+  .news__title hr {
+    margin-bottom: 40px;
+    width: 100px;
+    height: 1px;
+    background-color: #ffffff; }
+  .news__title h2 {
+    color: #ffffff;
+    font-family: Gotham;
+    font-size: 44px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 100px 0; }
+
 .news__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,10 +230,27 @@ header {
   .card__inner h4 {
     margin: 0; }
 
+.gallery__title hr {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  width: 100px;
+  height: 1px;
+  background-color: #2c4058; }
+.gallery__title h2 {
+  color: #2c4058;
+  font-family: Gotham;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 90px 0; }
+
 .gallery__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 60px; }
 
 .galery__small {
   display: -webkit-box;
@@ -233,6 +269,11 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px; }
+
+.gallery__see_more {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 140px; }
 
 .map {
   background-image: url("../img/map.png");
