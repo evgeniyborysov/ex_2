@@ -143,6 +143,9 @@ header {
   text-align: left;
   font-weight: 400; }
 
+.fa-map-marker-alt {
+  padding-right: 10px; }
+
 .btn__more {
   width: 190px;
   height: 50px;
@@ -206,29 +209,73 @@ header {
     margin: 0 0 100px 0; }
 
 .news__slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  padding-bottom: 100px; }
 
 .slider__card {
+  margin-right: 30px;
   width: 370px;
-  height: 514px; }
+  background-color: #ffffff; }
 
-.card__inner {
-  height: 60px;
+.card__foto {
+  width: 100%;
+  height: auto; }
+
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .card__inner h4 {
-    margin: 0; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 20px 10px 20px; }
+  .content__title {
+    margin: 0;
+    color: #2c4058;
+    font-family: Gotham;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .content__descr {
+    margin: 0;
+    color: #4b5562;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 35px; }
+  .content__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .content__card-tittle {
+    margin-left: 20px; }
+    .content__card-tittle h4 {
+      margin: 0;
+      color: #2c4058;
+      font-family: "Gotham - Book";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      text-align: left;
+      text-transform: uppercase; }
+    .content__card-tittle span {
+      color: #55b7ff;
+      font-family: "Gotham - Book";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left; }
 
 .gallery__title hr {
   margin-top: 100px;

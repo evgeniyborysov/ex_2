@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="./slick/slick.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Monticello</title>
   </head>
   <body>
@@ -70,7 +72,7 @@
 							are very powerful.
 						</p>
 						<button class="content__more btn__more">more details</button>
-						<span class="descr__signature">New York City, United States - 1776 feet</span>
+						<span class="descr__signature"><i class="fas fa-map-marker-alt"></i>New York City, United States - 1776 feet</span>
 					</div>
 				</div>
 				<div class="what__content-co">
@@ -82,7 +84,7 @@
 							how a digital advertising network may help.
 						</p>
 						<button class="content__more btn__more">more details</button>
-						<span class="descr__signature">Hong Kong - 1588 Feet</span>
+						<span class="descr__signature"><i class="fas fa-map-marker-alt"></i>Hong Kong - 1588 Feet</span>
 					</div>
 					<div class="content__img-co">
 						<img src="./img/Commerce_Centre.png" alt="Commerce_Centre">
@@ -98,50 +100,110 @@
 				</div>
 				<div class="news__slider">
 					<div class="slider__card">
-						<img src="./img/slide_1.png" alt="#">
-						<h3 class="card__title">
-							See The Unmatched Beauty Of The Great. Lakes.
-						</h3>
-						<p class="card__descr">
-							Free directories: directories are perfect for customers that are... searching for 
-						</p>
-						<div class="card__inner">
-							<img src="./img/slide_card_foto_1.png" alt="#">
-							<div class="card__tittle">
-								<h4>Isaac Dunn</h4>
-								<span>09 Feb 2017</span>
+						<img class="card__foto" src="./img/slide_1.png" alt="#">
+						<div class="content">
+							<h3 class="content__title">
+								See The Unmatched Beauty Of The Great.
+							</h3>
+							<p class="content__descr">
+								Free directories: directories are perfect for customers that are... searching for 
+							</p>
+							<div class="content__inner">
+								<img class="inner__foto" src="./img/slide_card_foto_1.png" alt="#">
+								<div class="content__card-tittle">
+									<h4>Isaac Dunn</h4>
+									<span>09 Feb 2017</span>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="slider__card">
-						<img src="./img/slide_2.png" alt="#">
-						<h3 class="card__title">
-							Effective Advertising Pointers.
-						</h3>
-						<p class="card__descr">
-							Having a home based business is a wonderful asset to your life...
-						</p>
-						<div class="card__inner">
-							<img src="./img/slide_card_foto_2.png" alt="#">
-							<div class="card__tittle">
-								<h4>Dominic Freeman</h4>
-								<span>24 Apr 2017</span>
+						<img class="card__foto" src="./img/slide_2.png" alt="#">
+						<div class="content">
+							<h3 class="content__title">
+								Effective Advertising Pointers.
+							</h3>
+							<p class="content__descr">
+								Having a home based business is a wonderful asset to your life...
+							</p>
+							<div class="content__inner">
+								<img class="inner__foto" src="./img/slide_card_foto_2.png" alt="#">
+								<div class="content__card-tittle">
+									<h4>Dominic Freeman</h4>
+									<span>24 Apr 2017</span>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="slider__card">
-						<img src="./img/slide_3.png" alt="#">
-						<h3 class="card__title">
-							Hypnotize Yourself Into The Ghost.
-						</h3>
-						<p class="card__descr">
-							There are many things that are important to catalog design...
-						</p>
-						<div class="card__inner">
-							<img src="./img/slide_card_foto_3.png" alt="#">
-							<div class="card__tittle">
-								<h4>Alice Ward</h4>
-								<span>30 Dec 2017</span>
+						<img class="card__foto" src="./img/slide_3.png" alt="#">
+						<div class="content">
+							<h3 class="content__title">
+								Hypnotize Yourself Into The Ghost.
+							</h3>
+							<p class="content__descr">
+								There are many things that are important to catalog design...
+							</p>
+							<div class="content__inner">
+								<img class="inner__foto" src="./img/slide_card_foto_3.png" alt="#">
+								<div class="content__card-tittle">
+									<h4>Alice Ward</h4>
+									<span>30 Dec 2017</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__card">
+						<img class="card__foto" src="./img/slide_1.png" alt="#">
+						<div class="content">
+							<h3 class="content__title">
+								See The Unmatched Beauty Of The Great.
+							</h3>
+							<p class="content__descr">
+								Free directories: directories are perfect for customers that are... searching for 
+							</p>
+							<div class="content__inner">
+								<img class="inner__foto" src="./img/slide_card_foto_1.png" alt="#">
+								<div class="content__card-tittle">
+									<h4>Isaac Dunn</h4>
+									<span>09 Feb 2017</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__card">
+						<img class="card__foto" src="./img/slide_2.png" alt="#">
+						<div class="content">
+							<h3 class="content__title">
+								Effective Advertising Pointers.
+							</h3>
+							<p class="content__descr">
+								Having a home based business is a wonderful asset to your life...
+							</p>
+							<div class="content__inner">
+								<img class="inner__foto" src="./img/slide_card_foto_2.png" alt="#">
+								<div class="content__card-tittle">
+									<h4>Dominic Freeman</h4>
+									<span>24 Apr 2017</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__card">
+						<img class="card__foto" src="./img/slide_3.png" alt="#">
+						<div class="content">
+							<h3 class="content__title">
+								Hypnotize Yourself Into The Ghost.
+							</h3>
+							<p class="content__descr">
+								There are many things that are important to catalog design...
+							</p>
+							<div class="content__inner">
+								<img class="inner__foto" src="./img/slide_card_foto_3.png" alt="#">
+								<div class="content__card-tittle">
+									<h4>Alice Ward</h4>
+									<span>30 Dec 2017</span>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -195,5 +257,8 @@
         </div>
       </div>
     </footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+	<script src="./slick/slick.min.js"></script>
+	<script src="./app.js"></script>
   </body>
 </html>
