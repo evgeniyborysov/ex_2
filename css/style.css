@@ -39,7 +39,8 @@ header {
     display: flex; }
   .header__wrap .menu__list-item {
     list-style-type: none;
-    margin-right: 40px; }
+    margin-right: 40px;
+    position: relative; }
   .header__wrap .menu__list-link {
     color: #ffffff;
     font-family: "Gotham - Book";
@@ -48,7 +49,20 @@ header {
     line-height: 22px;
     text-align: left;
     text-transform: uppercase;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative; }
+    .header__wrap .menu__list-link::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      right: 0;
+      top: 2px;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #ffffff;
+      border-radius: 50%; }
+  .header__wrap .menu__list-link:hover:before {
+    background-color: #ffffff; }
   .header__wrap .header__social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -334,5 +348,52 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.footer__wrap {
+  max-width: 720px;
+  margin: 0 auto; }
+
+.footer__inner {
+  padding-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 42px; }
+
+.footer__social-item {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px; }
+
+.copyright {
+  padding-bottom: 200px; }
+  .copyright span {
+    color: #ffffff;
+    font-family: "Gotham - Book";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left; }
 
 /*# sourceMappingURL=style.css.map */
