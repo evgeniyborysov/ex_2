@@ -21,6 +21,9 @@ header {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.header__logo {
+  margin-right: 112px; }
+
 .header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,7 +43,8 @@ header {
   .header__wrap .menu__list-item {
     list-style-type: none;
     margin-right: 40px;
-    position: relative; }
+    position: relative;
+    margin-right: 90px; }
   .header__wrap .menu__list-link {
     color: #ffffff;
     font-family: "Gotham - Book";
@@ -183,7 +187,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  position: relative; }
 
 .content__descr-tc {
   padding-left: 70px; }
@@ -192,10 +197,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 140px; }
+  margin-bottom: 140px;
+  position: relative; }
 
 .content__descr-co {
   padding-right: 70px; }
+
+.content__img-tc::after {
+  content: "";
+  position: absolute;
+  width: 585px;
+  height: 470px;
+  background-color: #55b7ff; }
 
 .news {
   background-image: url("../img/LN_bg.png");
@@ -231,10 +244,23 @@ header {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  list-style-type: none; }
+  .slick-dots li {
+    margin-right: 30px; }
+    .slick-dots li button {
+      visibility: hidden; }
 
-.slick-dots button {
-  visibility: hidden; }
+.slick-dots li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 50%; }
+
+.slick-dots li.slick-active:before {
+  background-color: #ffffff; }
 
 .slick-slide {
   height: 550px; }
@@ -383,6 +409,7 @@ header {
       height: 1px;
       background-color: #2c4058; }
     .map-responsive .form h3 {
+      margin: 0;
       color: #2c4058;
       font-family: Gotham;
       font-size: 44px;
@@ -393,20 +420,30 @@ header {
     .map-responsive .form__content {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
     .map-responsive .form__contact {
-      padding: 60px;
+      padding: 72px 0 60px 60px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
-      .map-responsive .form__contact__adress {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
+              flex-direction: column;
+      margin-right: 45px; }
+      .map-responsive .form__contact a {
+        text-decoration: none; }
+      .map-responsive .form__contact .item {
+        color: #2c4058;
+        font-family: "Gotham - Book";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: left;
+        margin-bottom: 15px; }
     .map-responsive .form__email {
       width: 310px;
       display: -webkit-box;
@@ -416,7 +453,34 @@ header {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 60px; }
+      padding: 60px 60px 60px 0; }
+      .map-responsive .form__email .touch input {
+        width: 310px;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid #2c4058;
+        color: #2c4058;
+        font-family: "Gotham - Book";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        margin-bottom: 30px; }
+      .map-responsive .form__email .touch button {
+        width: 140px;
+        height: 50px;
+        border: 1px solid #2c4058;
+        color: #2c4058;
+        font-family: "Gotham - Book";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: transparent;
+        cursor: pointer;
+        -ms-flex-item-align: end;
+            align-self: flex-end; }
 
 footer {
   background-image: url("../img/footer_bg.png");

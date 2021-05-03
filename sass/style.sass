@@ -11,7 +11,8 @@ header
     background-size: cover
     background-repeat: no-repeat
     // height: 100vh
-
+.header__logo
+    margin-right: 112px
 .header__wrap
     display: flex
     justify-content: space-around
@@ -26,6 +27,7 @@ header
             list-style-type: none
             margin-right: 40px
             position: relative
+            margin-right: 90px
         &__list-link
             color: #ffffff
             font-family: "Gotham - Book"
@@ -163,14 +165,25 @@ header
 .what__content-tc
     display: flex
     margin-bottom: 200px
+    position: relative
 .content__descr-tc
     padding-left: 70px
 
 .what__content-co
     display: flex
     margin-bottom: 140px
+    position: relative
 .content__descr-co
     padding-right: 70px
+
+.content__img-tc
+    &::after
+        content: ""
+        position: absolute
+        width: 585px
+        height: 470px
+        background-color: #55b7ff
+        
 
 // news
 
@@ -207,8 +220,22 @@ header
 .slick-dots
     display: flex
     justify-content: center
-.slick-dots button
-    visibility: hidden
+    list-style-type: none
+    li
+        margin-right: 30px
+        button
+            visibility: hidden
+
+.slick-dots li::before
+    content: ''
+    position: absolute
+    width: 8px
+    height: 8px
+    border: 1px solid #ffffff
+    border-radius: 50%
+    
+.slick-dots li.slick-active:before
+    background-color: #ffffff
 
 .slick-slide
     height: 550px
@@ -333,6 +360,7 @@ header
             height: 1px
             background-color: #2c4058
         h3
+            margin: 0
             color: #2c4058
             font-family: Gotham
             font-size: 44px
@@ -342,17 +370,56 @@ header
             text-transform: uppercase
         &__content
             display: flex
+            justify-content: center
         &__contact
-            padding: 60px
+            padding: 72px 0 60px 60px
             display: flex
             flex-direction: column
-            &__adress
-                display: flex
+            margin-right: 45px
+            a
+                text-decoration: none
+            .item
+                color: #2c4058
+                font-family: "Gotham - Book"
+                font-size: 18px
+                font-weight: 400
+                line-height: 34px
+                text-align: left
+                margin-bottom: 15px
         &__email
             width: 310px
             display: flex
             flex-direction: column
-            padding: 60px    
+            padding: 60px 60px 60px 0
+            .touch
+                input
+                    width: 310px
+                    height: 50px
+                    border: none
+                    border-bottom: 1px solid #2c4058
+                    // opacity: 0.2
+                    color: #2c4058
+                    font-family: "Gotham - Book"
+                    font-size: 18px
+                    font-weight: 400
+                    line-height: 22px
+                    text-align: left
+                    margin-bottom: 30px
+                button
+                    width: 140px
+                    height: 50px
+                    border: 1px solid #2c4058
+                    color: #2c4058
+                    font-family: "Gotham - Book"
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 22px
+                    text-align: center
+                    text-transform: uppercase
+                    background-color: transparent
+                    cursor: pointer
+                    align-self: flex-end 
+
 footer
     background-image: url("../img/footer_bg.png")
     background-position: center
